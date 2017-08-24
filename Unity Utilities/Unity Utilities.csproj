@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LerpInformation.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="LoggerTimeStampMode.cs" />
     <Compile Include="LoggerVerbosity.cs" />
@@ -59,8 +60,6 @@
     <Compile Include="Generic\DuplicateKeyComparer.cs" />
     <Compile Include="Generic\Tuple.cs" />
     <Compile Include="Geometry.cs" />
-    <Compile Include="Event System\EventTriggerData.cs" />
-    <Compile Include="Event System\EventTriggerFactory.cs" />
     <Compile Include="RandomRendererColour.cs" />
     <Compile Include="RandomUtilities.cs" />
     <Compile Include="Corner.cs" />

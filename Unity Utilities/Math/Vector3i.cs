@@ -106,6 +106,16 @@ namespace UnityUtilities.Math
             return $"({X}, {Y}, {Z})";
         }
 
+        public static implicit operator Vector3i(Vector3 vector)
+        {
+            return new Vector3i(Mathf.RoundToInt(vector.x), Mathf.RoundToInt(vector.y), Mathf.RoundToInt(vector.z));
+        }
+
+        public static implicit operator Vector3(Vector3i vector)
+        {
+            return new Vector3(vector.X, vector.Y, vector.Z);
+        }
+
         public Vector2 ToVector2()
         {
             return new Vector2(X, Y);

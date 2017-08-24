@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace UnityUtilities.Math
 {
@@ -100,19 +101,14 @@ namespace UnityUtilities.Math
             return $"({X}, {Y})";
         }
 
-        public Vector2 ToVector2()
+        public static implicit operator Vector2i(Vector2 vector)
         {
-            return new Vector2(X, Y);
+            return new Vector2i(Mathf.RoundToInt(vector.x), Mathf.RoundToInt(vector.y));
         }
 
-        public Vector3 ToVector3(int z = 0)
+        public static implicit operator Vector2(Vector2i vector)
         {
-            return new Vector3(X, Y, z);
-        }
-
-        public Vector4 ToVector4(int z = 0, int w = 0)
-        {
-            return new Vector4(X, Y, z, w);
+            return new Vector2(vector.X, vector.Y);
         }
     }
 }
