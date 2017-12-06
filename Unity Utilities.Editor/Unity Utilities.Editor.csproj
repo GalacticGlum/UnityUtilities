@@ -50,6 +50,13 @@
   <ItemGroup>
     <Compile Include="Inspectors\SortingLayerInspectorEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadonlyPropertyAttributeDrawer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Unity Utilities\Unity Utilities.csproj">
+      <Project>{7C52B01C-ECF1-4C01-8418-B92936A95140}</Project>
+      <Name>Unity Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

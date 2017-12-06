@@ -53,6 +53,7 @@
     <Compile Include="Math\MathHelper.cs" />
     <Compile Include="Math\Vector2i.cs" />
     <Compile Include="Math\Vector3i.cs" />
+    <Compile Include="ReadonlyPropertyAttribute.cs" />
     <Compile Include="UI\AnimatedImage.cs" />
     <Compile Include="Effects\AmimatedProjector.cs" />
     <Compile Include="Effects\AnimatedLight.cs" />
