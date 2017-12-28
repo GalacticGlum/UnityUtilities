@@ -20,8 +20,9 @@ namespace UnityUtilities.Editor.Inspectors
 
             int startIndex = Array.IndexOf(sortingLayers, inspector.Renderer.sortingLayerName);
             sortingLayerIndex = EditorGUILayout.Popup("Sorting Layer", startIndex, sortingLayers);
+            int sortingOrder = EditorGUILayout.IntField("Sorting Order", inspector.Renderer.sortingOrder);
 
-            inspector.ApplySortingLayer(sortingLayers[sortingLayerIndex]);
+            inspector.Apply(sortingLayers[sortingLayerIndex], sortingOrder);
         }
 
         private static string[] GetSortingLayerNames()

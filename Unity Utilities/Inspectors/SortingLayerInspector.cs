@@ -13,12 +13,11 @@ namespace UnityUtilities.Inspectors
             Renderer = GetComponent<Renderer>();
         }
 
-        public void ApplySortingLayer(string sortingLayerName)
+        public void Apply(string sortingLayerName, int order)
         {
-            if (Renderer != null)
-            {
-                Renderer.sortingLayerName = sortingLayerName;
-            }
+            if (Renderer == null) return;
+            Renderer.sortingLayerName = sortingLayerName;
+            Renderer.sortingOrder = order;
         }
     }
 }
